@@ -1,0 +1,8 @@
+log.txt
+__pycache__/
+*.pyc
+.venv/
+code/.cache/
+.env
+*.jsonl
+code.zip

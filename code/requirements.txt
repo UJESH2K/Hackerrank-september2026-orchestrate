@@ -1,0 +1,10 @@
+# The deterministic engine, the Groq perception calls, and the CLI use only
+# the Python standard library (csv, decimal, dataclasses, urllib). Nothing to
+# install for `python code/main.py --no-evidence` or the test suite.
+#
+# Claude (vision OCR + income-stability classification) goes through the
+# official Anthropic SDK rather than another raw-HTTP client, so it is a real
+# dependency:
+anthropic>=1.0
+
+# Python 3.10+ is required for the `X | None` type-hint syntax used throughout.
